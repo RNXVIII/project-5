@@ -55,11 +55,13 @@ body {
     color: #000 !important;
 }
 
+.bg-purple {
+    background-color: #BF40BF;
+    border-radius: 10px;
+}
+
 .text-white {
     color: white !important;
-    background-color: #000;
-    border-radius: 10px;
-    padding: 5px;
 }
 
 .border-black {
