@@ -10,7 +10,6 @@ essentially what i have done for this project to try and show as much work as po
 
 please go the bottom of the read.md first before continuing reviewing this!
 
-Note(edit): essentially at the time of writing this i am deploying the project but i dont have enough time to understand/remember how to figure out whats wrong so on the heroku app ive turned collectstatic off so it deploys.
 
 # features 
 
