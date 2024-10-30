@@ -105,19 +105,9 @@ LOGIN_REDIRECT_URL = '/'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.config(
-            conn_max_age=600, ssl_require=True
-        )
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
+DATABASES = {
+    'default': dj_database_url.parse('postgres://uctxjfqt1dq:bW262x7Hti4k@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/dock_omen_silk_40159?options=endpoint%3Dep-gentle-mountain-a23bxz6h&sslmode=require')
+}
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
